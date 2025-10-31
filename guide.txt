@@ -1,0 +1,24 @@
+Zenith Bank — Workforce Forecasting
+Generated: 2025-10-30T15:55:04.700791Z
+
+Step-by-step (Windows Command Prompt):
+
+1. Download and extract the project ZIP to a folder, e.g. C:\Users\<You>\Downloads\zenith_workforce_forecasting
+2. Open Command Prompt (cmd.exe).
+3. Navigate to the project folder:
+   cd %USERPROFILE%\Downloads\zenith_workforce_forecasting
+4. Create virtual environment:
+   python -m venv venv
+5. Activate it:
+   venv\Scripts\activate
+6. Install dependencies:
+   pip install -r requirements.txt
+   (If 'prophet' fails to install on Windows, follow Prophet's Windows installation notes or use the fallback ARIMA code in the notebook.)
+7. Run notebook (optional):
+   jupyter notebook notebooks\workforce_forecast.ipynb
+8. Run Streamlit app:
+   streamlit run app.py
+
+Files of interest:
+- data/workforce_data.csv  (historical data)
+- forecast.csv             (auto-updated by the app/notebook)
